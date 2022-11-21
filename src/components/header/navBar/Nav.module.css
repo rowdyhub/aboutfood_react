@@ -4,12 +4,13 @@
 }
 
 a {
-    color: #1e1e1e;
+    color: var(--brown);
     text-decoration: none;
     font-family: 'AF_RobotoLight';
     font-size: 13pt;
 }
 
 a:hover {
-    color: #000000;
+    color: var(--brown);
+    font-weight: 600;
 }
