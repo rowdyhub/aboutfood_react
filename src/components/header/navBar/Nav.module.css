@@ -1,0 +1,15 @@
+.navCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-family: 'AF_RobotoLight';
+    font-size: 13pt;
+}
+
+a:hover {
+    color: #000000;
+}

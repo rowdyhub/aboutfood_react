@@ -1,0 +1,22 @@
+.userBarCont {
+    display: flex;
+    align-items: center;
+    font-family: 'AF_RobotoLight';
+}
+
+.userBar {
+    display: flex;
+    align-items: center;
+}
+
+.userPic {
+    background: url('./../../../images/userPicDefault.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+}
+
+.userName {
+
+}
