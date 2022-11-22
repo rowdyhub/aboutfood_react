@@ -1,11 +1,25 @@
-import styles from "./Content.module.css"
+import { Routes, Route } from 'react-router-dom';
 
-let Content = () => {
+import Main from "./../../components/content/main/Main";
+import Recipes from "./../../components/content/recipes/Recipes";
+import GetMenu from "./../../components/content/getmenu/GetMenu";
+import Notfoundpage from "./../../components/content/notfoundpage/Notfoundpage";
+
+import styles from './Content.module.css';
+
+let Content = (props) => {
     return (
-        <div>
-            Content
-        </div> 
-    );
+        <div className={ styles.contentCont }>
+            <div className={ styles.content }>
+                <Routes>
+                    <Route path="/" element={ <Main props={props.props}/> }/>
+                    <Route path="/recipes" element={ <Recipes/> }/>
+                    <Route path="/getmenu" element={ <GetMenu/> }/>
+                    <Route path="*" element={ <Notfoundpage/> }/>
+                </Routes>
+            </div>
+        </div>
+    )
 }
 
 export default Content;

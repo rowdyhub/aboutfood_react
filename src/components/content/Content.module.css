@@ -1,0 +1,18 @@
+.contentCont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--milc);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    max-width: 1100px;
+    margin: auto;
+    background: var(--white);
+    border-right: 3px solid var(--brown);
+    border-left: 3px solid var(--brown);
+}
