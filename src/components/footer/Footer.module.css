@@ -13,6 +13,8 @@
     color: var(--white);
     font-family: 'AF_RobotoLight';
     font-size: 11pt;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .footer a {
     font-size: 11pt;

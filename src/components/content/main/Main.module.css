@@ -1,0 +1,55 @@
+.mainCont {
+    position: relative;
+    width: 100%;
+}
+
+.lastPosts, .posts { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.lastPost {
+    display: block;
+    position: relative;
+    width: calc( 50% - 10px);
+    height: 250px;
+    background: url('./../../../images/1006224708.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.post {
+    display: block;
+    position: relative;
+    width: calc( 32% );
+    height: 250px;
+    background: url('./../../../images/1006224708.jpg') no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.description {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    font-family: 'AF_RobotoLight';
+    color: var(--white);
+    background: linear-gradient(#00000000, #00000090 70%);
+    box-sizing: border-box;
+}
+.name {
+    font-family: 'AF_Roboto';
+    font-weight: 600;
+
+}
+.text {
+    height: 70px;
+    margin-top: 7px;
+}
+.links {
+
+}
