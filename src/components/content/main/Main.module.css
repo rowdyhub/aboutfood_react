@@ -15,9 +15,9 @@
     display: block;
     position: relative;
     width: calc( 50% - 10px);
-    height: 250px;
+    height: 250px;/* 
     background: url('./../../../images/1006224708.jpg') no-repeat;
-    background-size: cover;
+    background-size: cover; */
     margin-bottom: 20px;
 }
 
@@ -25,9 +25,9 @@
     display: block;
     position: relative;
     width: calc( 32% );
-    height: 250px;
+    height: 250px;/* 
     background: url('./../../../images/1006224708.jpg') no-repeat;
-    background-size: cover;
+    background-size: cover; */
     margin-bottom: 20px;
 }
 
