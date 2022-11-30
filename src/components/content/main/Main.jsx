@@ -7,17 +7,15 @@ let Main = (props) => {
     
     return (
         <div className={styles.mainCont}>
-            <div className={styles.lastPosts}>
-
-                { props.props.map((elem) => {
-                    return <LastPost key={elem.id} props={elem} />
-                }) }
-
-            </div>
+            <h1>Последние посты:</h1> 
             <div className={styles.posts}>
-
-                { props.props.map((elem) => {
-                    return <Post key={elem.id} props={elem} />
+                { props.props.map((elem, ind) => {
+                    if(ind < 2) {
+                        return <LastPost key={elem.id} props={elem} />
+                    }
+                    else {
+                        return <Post key={elem.id} props={elem} />
+                    }
                 }) }
 
             </div>

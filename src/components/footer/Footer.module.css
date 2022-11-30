@@ -33,7 +33,7 @@
 }
 
 .row a {
-    color: #3dcbff;
+    color: var(--link);
     text-decoration: none;
 }
 
