@@ -1,0 +1,48 @@
+.recipesCont {
+    width: 100%;
+    position: relative;
+}
+
+.filter {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #00000020;
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.recipesCardCont {
+    width: 100%;
+    position: relative;
+}
+
+.recipesCard {
+    display: flex;
+    background-color: var(--white);
+    padding: 10px;
+    height: 175px;
+}
+
+.cover {
+    width: 175px;
+    min-width: 175px;
+    height: 100%;
+    
+    background: url(/public/images/p_O.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.discription {
+    width: 90%;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+.stat {
+    width: 175px;
+    min-width: 175px;
+    height: 100%;
+    padding: 0px 20px;
+}
