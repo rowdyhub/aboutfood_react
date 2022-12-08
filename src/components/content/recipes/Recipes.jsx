@@ -19,22 +19,56 @@ let Recipes = () => {
 
             </div>
             <div className={styles.recipesCardCont}>
+
                 <div className={styles.recipesCard}>
                     <div className={styles.cover}>
 
                     </div>
                     <div className={styles.discription}>
-                        <div>Японская кухня     ♦    Салаты</div>
-                        <div>Японский салат с рисом</div>
-                        <div>Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.</div>
+                        <div className={ styles.links }>Японская кухня <span className={ styles.delim }>♦</span> Салаты</div>
+                        <div className={ styles.name }>Японский салат с рисом</div>
+                        <div className={ styles.text }>Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.</div>
                     </div>
                     <div className={styles.stat}>
-                        <div>4 порции</div>
-                        <div>60 минут</div>
-                        <div>217 отметок</div>
-                        <div>В избранное</div>
+                        <div className={ styles.data}>
+                            <div className={ styles.persones }>4 порции</div>
+                            <div className={ styles.time }>60 минут</div>
+                            <div className={ styles.likes }>217 отметок</div>
+                        </div>
+                        <div className={ styles.control }>
+                            <div className={ styles.inOutFavorite }></div>
+                        </div>
                     </div>
                 </div>
+
+
+                
+
+                <div className={styles.recipesCard}>
+                    <div className={styles.cover}>
+
+                    </div>
+                    <div className={styles.discription}>
+                        <div className={ styles.links }>Японская кухня <span className={ styles.delim }>♦</span> Салаты</div>
+                        <div className={ styles.name }>Японский салат с рисом</div>
+                        <div className={ styles.text }>Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.</div>
+                    </div>
+                    <div className={styles.stat}>
+                        <div className={ styles.data}>
+                            <div className={ styles.persones }>4 порции</div>
+                            <div className={ styles.time }>60 минут</div>
+                            <div className={ styles.likes }>217 отметок</div>
+                        </div>
+                        <div className={ styles.control }>
+                            <div className={ styles.inOutFavorite + ' ' + styles.action }></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                
             </div>
         </div> 
     );

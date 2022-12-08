@@ -1,6 +1,7 @@
 .recipesCont {
     width: 100%;
     position: relative;
+    font-family: 'AF_RobotoLight';
 }
 
 .filter {
@@ -22,6 +23,7 @@
     background-color: var(--white);
     padding: 10px;
     height: 175px;
+    margin-bottom: 15px;
 }
 
 .cover {
@@ -41,8 +43,124 @@
 }
 
 .stat {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
     width: 175px;
     min-width: 175px;
     height: 100%;
     padding: 0px 20px;
+}
+
+.links {
+    color: var(--brown);
+    font-size: 9pt;
+}
+.delim {
+    font-size: 9pt;
+    padding: 0 7px;
+}
+
+.name {
+    font-size: 20pt;
+    margin: 5px 0;
+}
+
+.text {
+    font-size: 12pt;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.control {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.persones {
+    font-size: 12pt;
+}
+
+.persones:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/coocking.png');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}
+
+.time {
+    font-size: 12pt;
+}
+
+.time:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/time.png');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}
+
+.likes {
+    font-size: 12pt;
+}
+
+.likes:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/star.svg');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}
+
+.inOutFavorite {
+    background-color: var(--milc);
+    border: 1px solid var(--brown);
+    border-radius: 5px;
+    padding: 3px 12px;
+    width: 135px;
+}
+
+.inOutFavorite:after {
+    content: 'В избранное';
+}
+
+.inOutFavorite:before {
+    width: 15px;
+    height: 15px;
+    background: url('/public/icons/star.svg');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 7px;
+    margin-top: 2px;
+}
+
+.action:before {
+    width: 15px;
+    height: 15px;
+    background: url('/public/icons/starA.svg') no-repeat;
+    fill: #fff;
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 7px;
+    margin-top: 2px;
+}
+
+.action:after {
+    content: 'Из избранного';
 }
