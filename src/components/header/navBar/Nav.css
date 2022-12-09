@@ -1,0 +1,4 @@
+/* NavLink присваивает простой className "actve" */
+.active {
+    font-weight: 900;
+}
