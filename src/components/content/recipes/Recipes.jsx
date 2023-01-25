@@ -1,4 +1,5 @@
 import styles from "./Recipes.module.css"
+import FavoriteButton from "../../../UI/FavoritesButton";
 
 let Recipes = () => {
     return (
@@ -80,7 +81,7 @@ let Recipes = () => {
                             <div className={ styles.likes }>217 отметок</div>
                         </div>
                         <div className={ styles.control }>
-                            <div className={ styles.inOutFavorite }></div>
+                            <FavoriteButton action='false'/>
                         </div>
                     </div>
                 </div>
@@ -108,7 +109,7 @@ let Recipes = () => {
                             <div className={ styles.likes }>217 отметок</div>
                         </div>
                         <div className={ styles.control }>
-                            <div className={ styles.inOutFavorite + ' ' + styles.action }></div>
+                            <FavoriteButton action='true'/>
                         </div>
                     </div>
                 </div>
