@@ -5,7 +5,7 @@ import RecipeInfo from "./RecipeInfo";
 let RecipeHeader = (props) => {
     return (
         <div className={ styles.recipe_header }>
-            <div className={ styles.recipe_header_photo }></div>
+            <div className={ styles.recipe_header_photo } style={{backgroundImage: `url(${props.mainImageUrl})`, backgroundSize: 'cover', backgroundPosition: '50% 50%'}}></div>
             <div className={ styles.recipe_header_data }>
                 <div className={ styles.recipe_white_block }>
                     <div className={ styles.recipe_author_block }>
@@ -15,7 +15,7 @@ let RecipeHeader = (props) => {
                     <div className={ styles.recipe_control }>
                         <div className={ styles.recipe_likes }>{ props.likes }</div>
                         <div className={ styles.recipe_button }>
-                            <FavoriteButton action='false'/>
+                            <FavoriteButton action={props.liked}/>
                         </div>
                     </div>
                 </div>

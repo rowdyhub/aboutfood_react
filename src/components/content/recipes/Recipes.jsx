@@ -1,8 +1,7 @@
 import styles from "./Recipes.module.css"
-import FavoriteButton from "../../../UI/FavoritesButton";
-import RecipeInfo from "./RecipeInfo";
+import RecipesCard from "./RecipesCard";
 
-let Recipes = () => {
+let Recipes = (props) => {
     return (
         <div className={styles.recipesCont}>
             {/* Filter component */}
@@ -60,33 +59,17 @@ let Recipes = () => {
 
 
             {/* Recipes component */}
+            
             <div className={styles.recipesCardCont}>
-
-                <div className={styles.recipesCard}>
-                    <div className={styles.cover} style={{
-                        backgroundImage: `url("images/soupe.jpg")`,
-                        backgroundSize: `cover`,
-                        backgroundPosition: `50%`
-                        }}>
-
-                    </div>
-                    <div className={styles.discription}>
-                        <div className={ styles.links }>Французская кухня<span className={ styles.delim }>♦</span>Супы</div>
-                        <div className={ styles.name }>Сырный суп по-французски с курицей</div>
-                        <div className={ styles.text }>Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящих сухариков никого не оставит равнодушным.</div>
-                    </div>
-                    <div className={styles.stat}>
-                        <RecipeInfo />
-                        <div className={ styles.control }>
-                            <FavoriteButton action='false'/>
-                        </div>
-                    </div>
-                </div>
-
-
+                {
+                    props.recipes.map((elem) => {
+                        return <RecipesCard elem={elem}/>
+                    })
+                }
                 
 
-                <div className={styles.recipesCard}>
+
+                {/* <div className={styles.recipesCard}>
                     <div className={styles.cover} style={{
                         backgroundImage: `url("images/rice.jpg")`,
                         backgroundSize: `cover`,
@@ -106,7 +89,7 @@ let Recipes = () => {
                         </div>
                     </div>
                 </div>
-
+ */}
 
 
 

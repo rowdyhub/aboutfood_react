@@ -4,13 +4,14 @@ let state = {
         userId: 763,
         userAvatar: '',
         userName: 'Dari',
+        liked: true,
         name: 'Сырный суп по-французски с курицей (место для второй строки при длинном названии)',
         cuisine: 'Французская кухня',
         category: 'Супы',
         persones: 1,
         time: 2,    /* only minutes */
         likes: 3,
-        mainImageUrl: '',
+        mainImageUrl: '../images/p_O.jpg',
         description: 'Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящихсухариков никого не оставит равнодушным.',
         ingridients: [
             {
@@ -46,30 +47,32 @@ let state = {
             {
                 inID: 1,
                 outID: 1,
-                imageURL: '',
+                imageURL: '../images/p_O.jpg',
                 text: 'Описание ШАГ 1'
             },
             {
                 inID: 2,
                 outID: 1,
-                imageURL: '',
+                imageURL: '../images/b79c442b.jpg',
                 text: 'Описание ШАГ 2'
             },
             {
                 inID: 3,
                 outID: 1,
-                imageURL: '',
+                imageURL: '../images/1006224708.jpg',
                 text: 'Описание ШАГ 3'
             },
             {
                 inID: 4,
                 outID: 1,
-                imageURL: '',
+                imageURL: '../images/p_O.jpg',
                 text: 'Описание ШАГ 4'
             },
         ]
     },
 
+
+    /* Посты на главной */
     posts: [
         {
             id: 51,
@@ -127,6 +130,55 @@ let state = {
             image: '1006224708.jpg',
             hashtags: '#хештеги'
         },
+    ],
+
+    /* Полный список рецептов для вывода списка */
+    recipes: [
+        {
+            id: 1,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: true,
+            name: 'Сырный суп по-французски с курицей (место для второй строки при длинном названии)',
+            cuisine: 'Французская кухня',
+            category: 'Супы',
+            persones: 1,
+            time: 2,    /* only minutes */
+            likes: 3,
+            mainImageUrl: '../images/p_O.jpg',
+            description: 'Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящихсухариков никого не оставит равнодушным.'
+        },
+        {
+            id: 2,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: false,
+            name: 'Японский салат с рисом',
+            cuisine: 'Японская кухня',
+            category: 'Салаты',
+            persones: 4,
+            time: 5,    /* only minutes */
+            likes: 6,
+            mainImageUrl: '../images/rice.jpg',
+            description: 'Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.'
+        },
+        {
+            id: 3,
+            userId: 764,
+            userAvatar: '',
+            userName: 'Serg',
+            liked: true,
+            name: 'Жопа в томате',
+            cuisine: 'Кутукская кухня',
+            category: 'Второе блюдо',
+            persones: 7,
+            time: 8,    /* only minutes */
+            likes: 9,
+            mainImageUrl: '../images/b79c442b.jpg',
+            description: 'Ну шо скозать, не знаю даже. Куцна.'
+        }
     ]
 }
 

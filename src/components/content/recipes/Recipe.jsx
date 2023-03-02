@@ -9,15 +9,16 @@ let Recipe = (props) => {
     const {id} = useParams();
     let data = {};
     /* Тут будет запрос рецепта по id */
-
     return (
         <div className={ styles.content }>
+            {id}
             <RecipeHeader 
                 id={props.props.id} 
                 userId={props.props.userId} 
                 mainImageUrl={props.props.mainImageUrl} 
                 userAvatar={props.props.userAvatar} 
                 userName={props.props.userName} 
+                liked={props.props.liked}
                 likes={props.props.likes} 
                 name={props.props.name} 
                 cuisine={props.props.cuisine} 

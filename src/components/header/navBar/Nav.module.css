@@ -3,14 +3,14 @@
     justify-content: space-between;
 }
 
-a {
+.navCont a {
     color: var(--brown);
     text-decoration: none;
     font-family: 'AF_RobotoLight';
     font-size: 13pt;
 }
 
-a:hover {
+.navCont a:hover {
     color: var(--brown);
     font-weight: 600;
 }
