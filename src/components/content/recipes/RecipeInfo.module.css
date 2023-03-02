@@ -1,0 +1,49 @@
+.recipe_header_info {
+    padding: 10px 15px;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.persones {
+    font-size: 12pt;
+}
+
+.persones:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/coocking.png');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}
+
+.time {
+    font-size: 12pt;
+}
+
+.time:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/time.png');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}
+
+.likes {
+    font-size: 12pt;
+}
+
+.likes:before {
+    width: 17px;
+    height: 17px;
+    background: url('/public/icons/star.svg');
+    background-size: contain;
+    display: inline-block;
+    content: ' ';
+    margin-right: 13px;
+}

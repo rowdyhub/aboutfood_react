@@ -15,7 +15,7 @@ let Content = (props) => {
                 <Routes>
                     <Route path="/" element={ <Main props={props.props}/> }/>
                     <Route path="/recipes" element={ <Recipes/> }/>
-                    <Route path="/recipes/:id" element={ <Recipe/> }/>
+                    <Route path="/recipes/:id" element={ <Recipe  props={props.props.recipeResolve}/> }/>
                     <Route path="/getmenu" element={ <GetMenu/> }/>
                     <Route path="*" element={ <Notfoundpage/> }/>
                 </Routes>

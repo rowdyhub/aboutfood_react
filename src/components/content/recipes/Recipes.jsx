@@ -1,5 +1,6 @@
 import styles from "./Recipes.module.css"
 import FavoriteButton from "../../../UI/FavoritesButton";
+import RecipeInfo from "./RecipeInfo";
 
 let Recipes = () => {
     return (
@@ -75,11 +76,7 @@ let Recipes = () => {
                         <div className={ styles.text }>Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящих сухариков никого не оставит равнодушным.</div>
                     </div>
                     <div className={styles.stat}>
-                        <div className={ styles.data}>
-                            <div className={ styles.persones }>4 порции</div>
-                            <div className={ styles.time }>60 минут</div>
-                            <div className={ styles.likes }>217 отметок</div>
-                        </div>
+                        <RecipeInfo />
                         <div className={ styles.control }>
                             <FavoriteButton action='false'/>
                         </div>
@@ -103,11 +100,7 @@ let Recipes = () => {
                         <div className={ styles.text }>Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.</div>
                     </div>
                     <div className={styles.stat}>
-                        <div className={ styles.data}>
-                            <div className={ styles.persones }>4 порции</div>
-                            <div className={ styles.time }>60 минут</div>
-                            <div className={ styles.likes }>217 отметок</div>
-                        </div>
+                        <RecipeInfo />
                         <div className={ styles.control }>
                             <FavoriteButton action='true'/>
                         </div>

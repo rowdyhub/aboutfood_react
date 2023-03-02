@@ -1,0 +1,9 @@
+.recipe_ingridient {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
