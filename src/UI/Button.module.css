@@ -1,0 +1,17 @@
+.button {
+    background-color: var(--milc);
+    border: 1px solid var(--brown);
+    border-radius: 5px;
+    padding: 10px 12px;
+    width: 175px;
+    outline: none;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: background .3s, color .3s;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    transition: background .3s, color .3s;
+}

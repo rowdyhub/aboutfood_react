@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
+import Login from './login/Login';
+import Signup from './signup/Signup';
 import Main from "./../../components/content/main/Main";
 import Recipes from "./../../components/content/recipes/Recipes";
 import Recipe from "./../../components/content/recipes/Recipe";
@@ -14,6 +16,8 @@ let Content = (props) => {
             <div className={ styles.content }>
                 <Routes>
                     <Route path="/" element={ <Main props={props.props} /> }/>
+                    <Route path="/login" element={ <Login /> }/>
+                    <Route path="/signup" element={ <Signup /> }/>
                     <Route path="/recipes" element={ <Recipes recipes={props.props.recipes} /> }/>
                     <Route path="/recipes/:id" element={ <Recipe  props={props.props.recipeResolve} /> }/>
                     <Route path="/getmenu" element={ <GetMenu /> }/>

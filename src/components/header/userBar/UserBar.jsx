@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './UserBar.module.css';
 
 let UserBar = () => {
@@ -6,8 +7,8 @@ let UserBar = () => {
             <div className={styles.userBar}>
                 <div className={styles.userPic}></div>
                 <div className={styles.userName}>
-                    <div><a href='/login'>Войти</a> или</div>
-                    <div><a href='/signup'>Зарегистрироваться</a></div>
+                    <div><NavLink to='/login'>Вход</NavLink> или</div>
+                    <div><NavLink to='/signup'>Регистрация</NavLink></div>
                 </div>
             </div>
             
