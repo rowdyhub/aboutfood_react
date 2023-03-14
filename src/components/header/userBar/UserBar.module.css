@@ -10,7 +10,6 @@
 }
 
 .userPic {
-    background: url('./../../../images/userPicDefault.png');
     background-size: contain;
     width: 40px;
     height: 40px;

@@ -4,13 +4,13 @@ import UserBar from "./userBar/UserBar";
 
 import styles from "./Header.module.css"
 
-let Header = () => {
+let Header = (props) => {
     return (
         <div className={styles.headerCont}>
             <div className={styles.header}>
                 <Logo />
                 <NavBar />
-                <UserBar />
+                <UserBar user={props.state.user}/>
             </div>
         </div>
     );

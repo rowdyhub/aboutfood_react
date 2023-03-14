@@ -13,32 +13,32 @@ let Recipe = (props) => {
         <div className={ styles.content }>
             {id}
             <RecipeHeader 
-                id={props.props.id} 
-                userId={props.props.userId} 
-                mainImageUrl={props.props.mainImageUrl} 
-                userAvatar={props.props.userAvatar} 
-                userName={props.props.userName} 
-                liked={props.props.liked}
-                likes={props.props.likes} 
-                name={props.props.name} 
-                cuisine={props.props.cuisine} 
-                category={props.props.category} 
-                persones={props.props.persones} 
-                time={props.props.time} />
+                id={props.state.id} 
+                userId={props.state.userId} 
+                mainImageUrl={props.state.mainImageUrl} 
+                userAvatar={props.state.userAvatar} 
+                userName={props.state.userName} 
+                liked={props.state.liked}
+                likes={props.state.likes} 
+                name={props.state.name} 
+                cuisine={props.state.cuisine} 
+                category={props.state.category} 
+                persones={props.state.persones} 
+                time={props.state.time} />
 
             <div className={ styles.recipe_description }>
-                {props.props.description}
+                {props.state.description}
             </div>
 
             <div className={ styles.recipe_ingridients }>
-                {props.props.ingridients.map((elem)=>{
+                {props.state.ingridients.map((elem)=>{
                     return <RecipeIngridient name={elem.name} value={elem.value} unit={elem.unit}/>
                 })}
                 
             </div>
 
             <div className={ styles.recipe_steps }>
-                {props.props.steps.map((elem)=>{
+                {props.state.steps.map((elem)=>{
                     return <RecipeStep imageURL={elem.imageURL} text={elem.text}/>
                 })}
             </div>

@@ -9,7 +9,7 @@ let Main = (props) => {
         <div className={styles.mainCont}>
             <h1>Последние посты:</h1> 
             <div className={styles.posts}>
-                { props.props.posts.map((elem, ind) => {
+                { props.state.posts.map((elem, ind) => {
                     if(ind < 2) {
                         return <LastPost key={elem.id} props={elem} />
                     }

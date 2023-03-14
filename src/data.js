@@ -1,4 +1,17 @@
+import { rerenderDOM } from './rerenderdom';
+
 let state = {
+    user:{
+        userAuth: false,
+        curentUser: 87421,
+        userInfo: {
+            userID: 87421,
+            userName: 'ADMIN',
+            userPic: './images/userPics/Bcmp3qvswRr9ojjou7VNjk9E9SOInZ25GUyKabeIcvNpRDsuAAZ0Q2bEZEtXJkdaAQvY7NEm.jpg',
+            userToken: '4f2gh3f4h2g3f4h2g3f4h2g3'
+        }
+    },
+
     recipeResolve: {
         id: 1,
         userId: 763,
@@ -179,7 +192,77 @@ let state = {
             mainImageUrl: '../images/b79c442b.jpg',
             description: 'Ну шо скозать, не знаю даже. Куцна.'
         }
-    ]
+    ],
+
+    /* Signup */
+    signup: {
+        usernameinput: '',
+        useremailinput: '',
+        userpasswordainput: '',
+        userpasswordbinput: '',
+        changevalue: (inputname, value) => {
+            switch (inputname) {
+                case 'username':
+                    state.signup.usernameinput = value;
+                    console.log(state.signup);
+                    rerenderDOM(state);
+                    break;
+                case 'useremail':
+                    state.signup.useremailinput = value;
+                    console.log(state.signup);
+                    rerenderDOM(state);
+                    break;
+                case 'userpassworda':
+                    state.signup.userpasswordainput = value;
+                    console.log(state.signup);
+                    rerenderDOM(state);
+                    break;
+                case 'userpasswordb':
+                    state.signup.userpasswordbinput = value;
+                    console.log(state.signup);
+                    rerenderDOM(state);
+                    break;
+            
+                default:
+                    break;
+            }
+        },
+        dosignup: () => {
+            state.signup.usernameinput = '';
+            state.signup.useremailinput = '';
+            state.signup.userpasswordainput = '';
+            state.signup.userpasswordbinput = '';
+            rerenderDOM(state);
+        }
+    },
+
+    /* Logon */
+    login: {
+        useremailinput: '',
+        userpasswordinput: '',
+        changevalue: (inputname, value) => {
+            switch (inputname) {
+                case 'useremail':
+                    state.login.useremailinput = value;
+                    console.log(state.login);
+                    rerenderDOM(state);
+                    break;
+                case 'userpassword':
+                    state.login.userpasswordinput = value;
+                    console.log(state.login);
+                    rerenderDOM(state);
+                    break;
+            
+                default:
+                    break;
+            }
+        },
+        dologin: () => {
+            state.login.useremailinput = '';
+            state.login.userpasswordinput = '';
+            rerenderDOM(state);
+        }
+    }
 }
 
 export default state;

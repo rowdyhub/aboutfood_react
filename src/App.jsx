@@ -7,8 +7,8 @@ import styles from "./App.module.css";
 function App(props) {
     return (
         <div className={styles.App}>
-            <Header/>
-            <Content props={props.props}/>
+            <Header state={props.state}/>
+            <Content state={props.state}/>
             <Footer/>
         </div>
     );
