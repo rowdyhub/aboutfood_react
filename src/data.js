@@ -183,7 +183,7 @@ let state = {
             userAvatar: '',
             userName: 'Serg',
             liked: true,
-            name: 'Жопа в томате',
+            name: 'Баклажаны в томате',
             cuisine: 'Кутукская кухня',
             category: 'Второе блюдо',
             persones: 7,
