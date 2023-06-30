@@ -4,13 +4,13 @@
 }
 
 .navCont a {
-    color: var(--brown);
+    color: var(--emerald);
     text-decoration: none;
     font-family: 'AF_RobotoLight';
     font-size: 13pt;
 }
 
 .navCont a:hover {
-    color: var(--brown);
+    color: var(--emerald);
     font-weight: 600;
 }

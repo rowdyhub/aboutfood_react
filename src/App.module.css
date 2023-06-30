@@ -20,17 +20,41 @@
 
 /* COLORS */
 :root {
-    --brown: #7f5931;
-    --cacao: #edc698;
+    --cacao: #ab9665;
     --milc: #f5ddc0;
     --white: #ffffff;
 
     --link: #3dcbff;
     --dark: #1d1d1d;
+
+
+/* MAIN PALETTE COLORS */
+    --white-grey: #F8F9FB;
+    --grey: #F3F3FB;
+    --hazel: #B99274;
+    --olive: #8A9B6E;
+    --emerald: #354733;
 }
 
 /* ANY */
 .App, html, body {
     margin: 0;
     padding: 0;
+}
+.App {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    /*  Фон для шапки 
+    background-image: url('./images/header_bg.png');
+    background-size: 100% ;
+    background-repeat: no-repeat; */
+}
+.App_plate {
+    border: 1px solid #00000010;
+    width: 1100px;
+    margin: 250px 0 50px 0;
 }

@@ -7,9 +7,11 @@ import styles from "./App.module.css";
 function App(props) {
     return (
         <div className={styles.App}>
-            <Header state={props.state}/>
-            <Content state={props.state}/>
-            <Footer/>
+            <div className={styles.App_plate}>
+                <Header state={props.state}/>
+                <Content state={props.state}/>
+                <Footer/>
+            </div>
         </div>
     );
 }

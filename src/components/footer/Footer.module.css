@@ -1,7 +1,7 @@
 .footerCont {
-    width: 100%;
+    width: 1100px;
     display: flex;
-    background-color: var(--brown);
+    background-color: var(--olive);
 }
 
 .footer {
