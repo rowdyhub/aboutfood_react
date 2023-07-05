@@ -46,15 +46,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
-    /*  Фон для шапки 
-    background-image: url('./images/header_bg.png');
-    background-size: 100% ;
-    background-repeat: no-repeat; */
+    background-image: url('./images/pat1.png');
+    background-size: 30% ;
+    background-repeat: repeat;
 }
 .App_plate {
-    border: 1px solid #00000010;
     width: 1100px;
-    margin: 250px 0 50px 0;
+    margin: 120px 0 50px 0;
+    box-shadow: 0px 0px 15px #00000040;
 }

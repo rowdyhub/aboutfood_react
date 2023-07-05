@@ -1,5 +1,5 @@
 import styles from './RecipeHeader.module.css'
-import FavoriteButton from "./../../../UI/FavoritesButton";
+import FavoriteButton from "../../../UI/FavoritesButton/FavoritesButton";
 import RecipeInfo from "./RecipeInfo";
 
 let RecipeHeader = (props) => {

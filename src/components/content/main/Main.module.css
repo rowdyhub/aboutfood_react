@@ -7,6 +7,12 @@ h1 {
     width: 100%;
 }
 
+.carousel {
+    display: block;
+    background-color: var(--olive);
+    height: 350px;
+}
+
 .posts { 
     display: flex;
     flex-wrap: wrap;

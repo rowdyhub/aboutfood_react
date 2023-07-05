@@ -1,5 +1,5 @@
 import styles from './RecipesCard.module.css';
-import FavoriteButton from "../../../UI/FavoritesButton";
+import FavoriteButton from "../../../UI/FavoritesButton/FavoritesButton";
 import RecipeInfo from "./RecipeInfo";
 import { NavLink } from 'react-router-dom';
 
