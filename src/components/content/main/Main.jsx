@@ -6,6 +6,8 @@ import Carousel from "../../../UI/Carousel/Carousel";
 
 let Main = (props) => {
     
+
+
     return (
         <div className={styles.mainCont}>
             <div className={styles.carousel}>

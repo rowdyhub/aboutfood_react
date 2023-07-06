@@ -9,7 +9,7 @@ h1 {
 
 .carousel {
     display: block;
-    background-color: var(--olive);
+    /* background-color: var(--olive); */
     height: 350px;
 }
 
