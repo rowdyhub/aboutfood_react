@@ -1,5 +1,6 @@
-import LastPost from "./LastPost";
+import MorePost from "./MorePost";
 import Post from "./Post";
+import RecipesCard from "../recipes/RecipesCard";
 
 import styles from "./Main.module.css"
 import Carousel from "../../../UI/Carousel/Carousel";
@@ -14,24 +15,21 @@ let Main = (props) => {
                 <Carousel />
             </div>
 
-
-            <h1>Последние посты:</h1> 
-            <div className={styles.posts}>
-                { props.state.posts.map((elem, ind) => {
-                    if(ind < 0) {
-                        return <LastPost key={elem.id} props={elem} />
-                    }
-                    else {
-                        return <Post key={elem.id} props={elem} />
-                    }
-                }) }
-
+            
+            <h2>Интересные рецепты:</h2> 
+            <div>
+                    { props.state.recipes.map((elem) => {
+                        return <RecipesCard elem={elem} key={elem.id}/>
+                    }) }
             </div>
 
-            
-            <h1>Интересные рецепты:</h1> 
-            <div>
-                
+            <h2>Публикации:</h2> 
+            <div className={styles.posts}>
+                { props.state.posts.map((elem, ind) => {
+                    return <Post key={elem.id} props={elem} />
+                }) }
+                <MorePost />
+
             </div>
         </div> 
     );

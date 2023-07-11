@@ -63,7 +63,7 @@ let Recipes = (props) => {
             <div className={styles.recipesCardCont}>
                 {
                     props.recipes.map((elem) => {
-                        return <RecipesCard elem={elem}/>
+                        return <RecipesCard elem={elem}  key={elem.id}/>
                     })
                 }
                 

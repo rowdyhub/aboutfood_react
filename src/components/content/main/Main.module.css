@@ -1,5 +1,5 @@
-h1 {
-    font-family: 'AF_Roboto';
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'AF_RobotoLight';
 }
 
 .mainCont {
@@ -21,40 +21,27 @@ h1 {
     width: 100%;
 }
 
-.lastPost {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    width: calc( 50% - 10px);
-    height: 250px;
-    margin-bottom: 20px;
-}
-
 .post {
     display: block;
     position: relative;
-    cursor: pointer;
-    width: calc( 32% );
-    height: 250px;
+    width: calc( 32% - 20px);
     margin-bottom: 20px;
+    border: 1px solid #00000020;
+    padding: 10px;
+}
+
+.picture {
+    height: 250px;
+    width: 100%;
 }
 
 .description {
-    position: absolute;
     width: 100%;
-    height: 130px;
-    bottom: 0;
-    padding: 10px;
     font-family: 'AF_RobotoLight';
-    color: var(--white);
-    background: linear-gradient(#00000000, #000000c0 60%);
+    color: var(--dark);
     box-sizing: border-box;
     transition: .2s;
-}
-.post:hover .description, .lastPost:hover .description {
-    height: 250px;
-    bottom: 0px;
-    transition: .2s;
+    margin-top: 15px;
 }
 
 .name {
