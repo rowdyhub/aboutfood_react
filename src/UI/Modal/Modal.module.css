@@ -1,0 +1,17 @@
+.modalMain {
+    background-color: #00000020;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.modalContent {
+    background-color: var(--white);
+    border-radius: 7px;
+    padding: 20px;
+}

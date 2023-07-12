@@ -67,33 +67,6 @@ let Recipes = (props) => {
                     })
                 }
                 
-
-
-                {/* <div className={styles.recipesCard}>
-                    <div className={styles.cover} style={{
-                        backgroundImage: `url("images/rice.jpg")`,
-                        backgroundSize: `cover`,
-                        backgroundPosition: `50%`
-                        }}>
-
-                    </div>
-                    <div className={styles.discription}>
-                        <div className={ styles.links }>Японская кухня<span className={ styles.delim }>♦</span>Салаты</div>
-                        <div className={ styles.name }>Японский салат с рисом</div>
-                        <div className={ styles.text }>Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.</div>
-                    </div>
-                    <div className={styles.stat}>
-                        <RecipeInfo />
-                        <div className={ styles.control }>
-                            <FavoriteButton action='true'/>
-                        </div>
-                    </div>
-                </div>
- */}
-
-
-
-                
             </div>
             {/* Recipes component END*/}
         </div> 

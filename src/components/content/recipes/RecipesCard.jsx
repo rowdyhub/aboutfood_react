@@ -1,7 +1,7 @@
 import styles from './RecipesCard.module.css';
 import FavoriteButton from "../../../UI/FavoritesButton/FavoritesButton";
 import RecipeInfo from "./RecipeInfo";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 let RecipesCard = (props) => {
     return (
@@ -16,7 +16,7 @@ let RecipesCard = (props) => {
             <div className={styles.discription}>
                 <div className={ styles.links }> {props.elem.cuisine} <span className={ styles.delim }>♦</span>{props.elem.category}</div>
                 <div className={ styles.name }>
-                    <NavLink to={`/recipes/${props.elem.id}`}>{props.elem.name}</NavLink>
+                    <Link to={`/recipes/${props.elem.id}`}>{props.elem.name}</Link>
                 </div>
                 <div className={ styles.text }>{props.elem.description}</div>
             </div>

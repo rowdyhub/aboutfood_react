@@ -40,17 +40,35 @@ const Carousel = () => {
         curentCarouselElement >= carousel_data.length-1
             ? setCurentCarouselElement(0)
             : setCurentCarouselElement(curentCarouselElement + 1);
+            console.log('initNext');
     }
     function prevCarouselElement () {
         curentCarouselElement <= 0
             ? setCurentCarouselElement(carousel_data.length-1)
             : setCurentCarouselElement(curentCarouselElement - 1);
+            console.log('initPrew');
     }
+    function selectCaruselElement (id) {
+        setCurentCarouselElement(parseInt(id))
+    }
+
     // УТЕЧКА ПАМЯТИ
     // setInterval(() => {
     //      nextCarouselElement();
     // }, 4000);
     // Добавить смену слайдов по таймеру, переход по маркеру, перелистывание касанием.
+    // Решается применением useEffect и переопределением интервала
+
+    // Рабочий вариант, но запретить перелистывать при наведенном курсоре
+    //
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //             nextCarouselElement();
+    //     }, 4000);
+    //     return () => clearInterval(interval);
+    //   }, [curentCarouselElement]);
+
+
 
     return (
         <div className={styles.carouselContainer}>
@@ -71,10 +89,10 @@ const Carousel = () => {
             <div className={styles.markers}>
                 { carousel_data.map((elem, key) => {
                     if(curentCarouselElement === key) {
-                        return <div className={styles.markerElement + ' ' + styles.markerElementActive} key={elem.name}></div>
+                        return <div className={ styles.markerElement + ' ' + styles.markerElementActive } key={ key } onClick={ () => {selectCaruselElement(key)} }></div>
                     }
                     else {
-                        return <div className={styles.markerElement} key={elem.name}></div>
+                        return <div className={styles.markerElement} key={key} onClick={() => {selectCaruselElement(key)}}></div>
                     }
                 }) }
             </div>
