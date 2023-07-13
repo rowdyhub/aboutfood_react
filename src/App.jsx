@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import MyScrollRestoration from "./MyScrollRestoration";
 
 import Header from "./components/header/Header";
@@ -8,16 +10,25 @@ import Modal from "./UI/Modal/Modal"
 import styles from "./App.module.css";
 
 function App(props) {
+
+    const [modal, setModal] = useState(false);
+    const [modalContent, setModalContent] = useState('');
+
+    const openModal = (component) => {
+        setModal(true);
+        setModalContent(component);
+    }
+
     return (
         <div className={styles.App}>
             <div className={styles.App_plate}>
                 <MyScrollRestoration />
 
-                <Header state={props.state}/>
+                <Header state={props.state} modal={openModal}/>
                 <Content state={props.state}/>
                 <Footer/>
 
-                <Modal  isActive={true}/>
+                <Modal visible={modal} setVisible={setModal} content={modalContent} />
             </div>
         </div>
     );

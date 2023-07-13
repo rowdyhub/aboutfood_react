@@ -1,23 +1,27 @@
 import { NavLink } from 'react-router-dom';
+
+import Login from '../../content/login/Login';
+import Signup from "../../content/signup/Signup";
+
 import styles from './UserBar.module.css';
 
 let UserBar = (props) => {
-    if(!props.user.userAuth){
-        props.user.userInfo.userPic = `./images/userPicDefault.png`;
+    if(!props.state.user.userAuth){
+        props.state.user.userInfo.userPic = `./images/userPicDefault.png`;
     }
     return (
         <div className={styles.userBarCont}>
             <div className={styles.userBar}>
-                <div className={styles.userPic} style={{backgroundImage: `url(${props.user.userInfo.userPic})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '50%', backgroundPosition: '50%'}}></div>
+                <div className={styles.userPic} style={{backgroundImage: `url(${props.state.user.userInfo.userPic})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', borderRadius: '50%', backgroundPosition: '50%'}}></div>
                 
                 {
-                    props.user.userAuth
+                    props.state.user.userAuth
                         ? <div className={styles.userName}>
-                            <NavLink to={`/profile/${props.user.userInfo.userID}`} title='Профиль'> {props.user.userInfo.userName} </NavLink> 
+                            <NavLink to={`/profile/${props.state.user.userInfo.userID}`} title='Профиль'> {props.state.user.userInfo.userName} </NavLink> 
                         </div>
                         : <div className={styles.userName}>
-                            <div><NavLink to='/login'>Вход</NavLink> или</div>
-                            <div><NavLink to='/signup'>Регистрация</NavLink></div>
+                            <div><span className={styles.loginSpan} onClick={()=>{props.modal(<Login login={props.state.login}/>)}}>Вход</span> или</div>
+                            <div><span className={styles.signupSpan} onClick={()=>{props.modal(<Signup signup={props.state.signup}/>)}}>Регистрация</span></div>
                         </div>
                 
                 }

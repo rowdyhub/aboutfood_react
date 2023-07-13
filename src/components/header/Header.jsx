@@ -10,7 +10,7 @@ let Header = (props) => {
             <div className={styles.header}>
                 <Logo />
                 <NavBar />
-                <UserBar user={props.state.user}/>
+                <UserBar state={props.state} modal={props.modal}/>
             </div>
         </div>
     );

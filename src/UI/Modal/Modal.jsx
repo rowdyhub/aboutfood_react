@@ -1,10 +1,17 @@
 import styles from './Modal.module.css';
 
-const Modal = (props) => {
+
+
+const Modal = ({visible, setVisible, content}) => {
+    const rootClasses = [styles.modalMain];
+    if(visible){
+        rootClasses.push(styles.active)
+    }
+
     return (
-        <div className={styles.modalMain}>
-            <div className={styles.modalContent}>
-                <a href="https://youtu.be/GNrdg3PzpJQ?t=5218">Далее</a>
+        <div className={rootClasses.join(" ")} onClick={() => {setVisible(false)}}>
+            <div className={styles.modalContent} onClick={(e) => {e.stopPropagation()}}>
+                {content}
             </div>
         </div>
     )

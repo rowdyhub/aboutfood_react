@@ -19,3 +19,11 @@
 .userName {
 
 }
+
+.loginSpan, .signupSpan {
+    cursor: pointer;
+}
+
+.loginSpan:hover, .signupSpan:hover {
+    text-decoration: underline;
+}
