@@ -3,11 +3,11 @@ import Search from "./Search";
 
 import styles from './NavBar.module.css';
 
-let NavBar = () => {
+let NavBar = ({searchInput, setSearchInput}) => {
     return (
         <div className={styles.navBarCont}>
             <Nav />
-            <Search />
+            <Search searchInput={searchInput} setSearchInput={setSearchInput}/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ let Header = (props) => {
         <div className={styles.headerCont}>
             <div className={styles.header}>
                 <Logo />
-                <NavBar />
+                <NavBar searchInput={props.searchInput} setSearchInput={props.setSearchInput}/>
                 <UserBar state={props.state} modal={props.modal}/>
             </div>
         </div>

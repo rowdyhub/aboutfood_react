@@ -1,6 +1,7 @@
 .inOutFavorite {
-    background-color: var(--milc);
+    background-color: var(--olive);
     border: 1px solid var(--olive);
+    color: var(--white);
     border-radius: 5px;
     padding: 3px 12px;
     width: 135px;
@@ -28,7 +29,6 @@
     width: 15px;
     height: 15px;
     background: url('/public/icons/starA.svg') no-repeat;
-    fill: #fff;
     background-size: contain;
     display: inline-block;
     content: ' ';

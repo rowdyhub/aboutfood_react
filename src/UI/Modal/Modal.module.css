@@ -8,14 +8,12 @@
     align-items: center;
     top: 0;
     left: 0;
-    backdrop-filter: blur(0px);
     transition: 1s;
     cursor: pointer;
 }
 
 .active {
     display: flex;
-    backdrop-filter: blur(4px);
     transition: 1s;
 }
 

@@ -14,6 +14,8 @@ function App(props) {
     const [modal, setModal] = useState(false);
     const [modalContent, setModalContent] = useState('');
 
+    const [searchInput, setSearchInput] = useState('');
+
     const openModal = (component) => {
         setModal(true);
         setModalContent(component);
@@ -24,7 +26,7 @@ function App(props) {
             <div className={styles.App_plate}>
                 <MyScrollRestoration />
 
-                <Header state={props.state} modal={openModal}/>
+                <Header state={props.state} modal={openModal} searchInput={searchInput} setSearchInput={setSearchInput}/>
                 <Content state={props.state}/>
                 <Footer/>
 
