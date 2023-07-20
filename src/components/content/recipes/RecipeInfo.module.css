@@ -11,10 +11,11 @@
 }
 
 .persones:before {
-    width: 17px;
-    height: 17px;
+    width: 12pt;
+    height: 12pt;
     background: url('/public/icons/coocking.png');
-    background-size: contain;
+    background-size: 100%;
+    background-position: 50%;
     display: inline-block;
     content: ' ';
     margin-right: 13px;
@@ -25,10 +26,11 @@
 }
 
 .time:before {
-    width: 17px;
-    height: 17px;
+    width: 12pt;
+    height: 12pt;
     background: url('/public/icons/time.png');
-    background-size: contain;
+    background-size: 100%;
+    background-position: 50%;
     display: inline-block;
     content: ' ';
     margin-right: 13px;
@@ -39,10 +41,11 @@
 }
 
 .likes:before {
-    width: 17px;
-    height: 17px;
+    width: 12pt;
+    height: 12pt;
     background: url('/public/icons/star.svg');
-    background-size: contain;
+    background-size: 100%;
+    background-position: 50%;
     display: inline-block;
     content: ' ';
     margin-right: 13px;

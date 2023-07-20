@@ -5,7 +5,7 @@ let MorePost = () => {
     return (
         <div className={styles.post}>
             <div className={styles.description}>
-                Больше новостей...
+                Больше публицаий...
             </div>
         </div>
     )

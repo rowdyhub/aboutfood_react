@@ -26,11 +26,18 @@ function App(props) {
             <div className={styles.App_plate}>
                 <MyScrollRestoration />
 
-                <Header state={props.state} modal={openModal} searchInput={searchInput} setSearchInput={setSearchInput}/>
+                <Header 
+                    state={props.state} 
+                    modal={openModal} 
+                    searchInput={searchInput} 
+                    setSearchInput={setSearchInput}/>
                 <Content state={props.state}/>
                 <Footer/>
 
-                <Modal visible={modal} setVisible={setModal} content={modalContent} />
+                <Modal 
+                    visible={modal} 
+                    setVisible={setModal} 
+                    content={modalContent} />
             </div>
         </div>
     );

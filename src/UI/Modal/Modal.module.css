@@ -1,5 +1,5 @@
 .modalMain {
-    background-color: #00000020;
+    background-color: #00000000;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -8,13 +8,14 @@
     align-items: center;
     top: 0;
     left: 0;
-    transition: 1s;
+    transition: .7s;
     cursor: pointer;
 }
 
 .active {
     display: flex;
-    transition: 1s;
+    transition: .7s;
+    background-color: #00000090;
 }
 
 .modalContent {
