@@ -1,11 +1,8 @@
 import styles from './Login.module.css';
 import Button from '../../../UI/Button/Button';
-import { createRef } from 'react';
- 
-let useremailref = createRef();
-let userpasswordref = createRef();
 
 let Login = (props) => {
+    console.log(props);
     return (
         <div className={styles.contain}>
             <div className={styles.box}>
@@ -13,10 +10,18 @@ let Login = (props) => {
                     Login
                 </div>
                 <div>
-                    <input type="email" ref={useremailref} placeholder='Email' value={props.login.useremailinput} onChange={() => { props.login.changevalue('useremail', useremailref.current.value) }}/>
+                    <input 
+                        type="email" 
+                        placeholder='Email' 
+                        value={props.loginInputs.email} 
+                        onChange={(e) => { props.setLoginInputs({...props.loginInputs, email: e.target.value}) }}/>
                 </div>
                 <div>
-                    <input type="password" ref={userpasswordref} placeholder='Пароль' value={props.login.userpasswordinput} onChange={() => { props.login.changevalue('userpassword', userpasswordref.current.value) }}/>
+                    <input 
+                        type="password" 
+                        placeholder='Пароль' 
+                        value={props.loginInputs.password} 
+                        onChange={(e) => { props.setLoginInputs({...props.loginInputs, password: e.target.value}) }}/>
                 </div>
                 <div onClick={()=>{props.login.dologin()}}>
                     <Button name='Войти'/>

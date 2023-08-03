@@ -1,5 +1,3 @@
-import { rerenderDOM } from './rerenderdom';
-
 let state = {
     user:{
         userAuth: false,
@@ -194,75 +192,7 @@ let state = {
         }
     ],
 
-    /* Signup */
-    signup: {
-        usernameinput: '',
-        useremailinput: '',
-        userpasswordainput: '',
-        userpasswordbinput: '',
-        changevalue: (inputname, value) => {
-            switch (inputname) {
-                case 'username':
-                    state.signup.usernameinput = value;
-                    console.log(state.signup);
-                    rerenderDOM(state);
-                    break;
-                case 'useremail':
-                    state.signup.useremailinput = value;
-                    console.log(state.signup);
-                    rerenderDOM(state);
-                    break;
-                case 'userpassworda':
-                    state.signup.userpasswordainput = value;
-                    console.log(state.signup);
-                    rerenderDOM(state);
-                    break;
-                case 'userpasswordb':
-                    state.signup.userpasswordbinput = value;
-                    console.log(state.signup);
-                    rerenderDOM(state);
-                    break;
-            
-                default:
-                    break;
-            }
-        },
-        dosignup: () => {
-            state.signup.usernameinput = '';
-            state.signup.useremailinput = '';
-            state.signup.userpasswordainput = '';
-            state.signup.userpasswordbinput = '';
-            rerenderDOM(state);
-        }
-    },
 
-    /* Logon */
-    login: {
-        useremailinput: '',
-        userpasswordinput: '',
-        changevalue: (inputname, value) => {
-            switch (inputname) {
-                case 'useremail':
-                    state.login.useremailinput = value;
-                    console.log(state.login);
-                    rerenderDOM(state);
-                    break;
-                case 'userpassword':
-                    state.login.userpasswordinput = value;
-                    console.log(state.login);
-                    rerenderDOM(state);
-                    break;
-            
-                default:
-                    break;
-            }
-        },
-        dologin: () => {
-            state.login.useremailinput = '';
-            state.login.userpasswordinput = '';
-            rerenderDOM(state);
-        }
-    }
 }
 
 export default state;

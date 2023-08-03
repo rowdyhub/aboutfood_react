@@ -20,8 +20,8 @@ let UserBar = (props) => {
                             <NavLink to={`/profile/${props.state.user.userInfo.userID}`} title='Профиль'> {props.state.user.userInfo.userName} </NavLink> 
                         </div>
                         : <div className={styles.userName}>
-                            <div><span className={styles.loginSpan} onClick={()=>{props.modal(<Login login={props.state.login}/>)}}>Вход</span> или</div>
-                            <div><span className={styles.signupSpan} onClick={()=>{props.modal(<Signup signup={props.state.signup}/>)}}>Регистрация</span></div>
+                            <div><span className={styles.loginSpan} onClick={()=>{props.modal('login')}}>Вход</span> или</div>
+                            <div><span className={styles.signupSpan} onClick={()=>{props.modal('signup')}}>Регистрация</span></div>
                         </div>
                 
                 }

@@ -11,10 +11,23 @@ import styles from "./App.module.css";
 
 function App(props) {
 
-    const [modal, setModal] = useState(false);
-    const [modalContent, setModalContent] = useState('');
 
     const [searchInput, setSearchInput] = useState('');
+
+    const [loginInputs, setLoginInputs] = useState({
+        email: '',
+        password: '',
+    });
+
+    const [signupInputs, setSignupInputs] = useState({
+        username: '',
+        email: '',
+        password1: '',
+        password2: '',
+    });
+    
+    const [modal, setModal] = useState(false);
+    const [modalContent, setModalContent] = useState('');
 
     const openModal = (component) => {
         setModal(true);
@@ -31,13 +44,20 @@ function App(props) {
                     modal={openModal} 
                     searchInput={searchInput} 
                     setSearchInput={setSearchInput}/>
+                    
                 <Content state={props.state}/>
                 <Footer/>
 
                 <Modal 
                     visible={modal} 
                     setVisible={setModal} 
-                    content={modalContent} />
+                    content={modalContent} 
+                    
+                    signupInputs={signupInputs}
+                    setSignupInputs={setSignupInputs}
+
+                    loginInputs={loginInputs}
+                    setLoginInputs={setLoginInputs}/>
             </div>
         </div>
     );
