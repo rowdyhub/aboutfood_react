@@ -8,6 +8,7 @@ const Modal = ({visible, setVisible, content, ...props}) => {
     const rootClasses = [styles.modalMain];
     if(visible){
         rootClasses.push(styles.active)
+        document.body.style.overflowY = 'hidden';
     }
 
     let inModal;
@@ -19,7 +20,7 @@ const Modal = ({visible, setVisible, content, ...props}) => {
 
 
     return (
-        <div className={rootClasses.join(" ")} onClick={() => {setVisible(false)}}>
+        <div className={rootClasses.join(" ")} onClick={() => {setVisible(false); document.body.style.overflowY = 'scroll';}}>
             <div className={styles.modalContent} onClick={(e) => {e.stopPropagation()}}>
                 {inModal}                
             </div>
