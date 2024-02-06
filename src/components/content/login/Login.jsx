@@ -2,7 +2,6 @@ import styles from './Login.module.css';
 import Button from '../../../UI/Button/Button';
 
 let Login = (props) => {
-    console.log(props);
     return (
         <div className={styles.contain}>
             <div className={styles.box}>
@@ -23,7 +22,7 @@ let Login = (props) => {
                         value={props.loginInputs.password} 
                         onChange={(e) => { props.setLoginInputs({...props.loginInputs, password: e.target.value}) }}/>
                 </div>
-                <div onClick={()=>{props.login.dologin()}}>
+                <div onClick={()=>{props.doLogin()}}>
                     <Button name='Войти'/>
                 </div>
             </div>

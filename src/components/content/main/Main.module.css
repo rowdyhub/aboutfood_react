@@ -1,5 +1,6 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: 'AF_RobotoLight';
+    margin-top: 45px;
 }
 
 .mainCont {
@@ -68,4 +69,20 @@ h1,h2,h3,h4,h5,h6 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.moreButton {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    box-shadow: 0 0 10px #00000040;
+    color: var(--dark);
+    text-decoration: none;
+    transition: .2s;
+}
+.moreButton:hover {
+    text-decoration: underline;
+    transition: .2s;
 }

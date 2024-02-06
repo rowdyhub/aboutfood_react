@@ -22,7 +22,7 @@ let Main = (props) => {
                     { props.state.recipes.map((elem) => {
                         return <RecipesCard elem={elem} key={elem.id}/>
                     }) }
-                    <Link to="/recipes">Бльше рецептов</Link>
+                    <Link className={styles.moreButton} to="/recipes">Бльше рецептов</Link>
             </div>
             
 

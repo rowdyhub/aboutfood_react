@@ -81,3 +81,22 @@
     font-family: 'AF_Roboto';
     color: var(--dark);
 }
+
+
+.recipe_informations {
+    display: flex;
+    margin-top: 20px;
+}
+.recipe_informations_buttons {
+    border: 1px solid #00000020;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+.recipe_informations_buttons span {
+    border: 1px solid #00000020;
+    border-radius: 50%;
+    display: inline-block;
+    width: 16pt;
+    height: 16pt;
+}

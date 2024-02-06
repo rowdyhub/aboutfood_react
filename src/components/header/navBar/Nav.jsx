@@ -8,7 +8,7 @@ let Nav = () => {
         <div className={styles.navCont}>
             <NavLink to="/">Главная</NavLink>
             <NavLink to="/recipes">Рецепты</NavLink>
-            <NavLink to="/getmenu">Подбор рецептов</NavLink>
+            <NavLink to="/admin">Админка</NavLink> {/* /getmenu */}
         </div>
     )
 }

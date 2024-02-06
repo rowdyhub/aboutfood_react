@@ -1,9 +1,11 @@
-import styles from "./GetMenu.module.css"
+// import styles from "./GetMenu.module.css"
 
-let GetMenu = () => {
+
+
+let GetMenu = (props) => {
     return (
         <div>
-            GetMenu
+            { console.log(props) }
         </div> 
     );
 }

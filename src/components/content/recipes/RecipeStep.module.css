@@ -1,9 +1,22 @@
 .recipe_step {
     background-color: var(--white);
     border-radius: 5px;
-    padding: 10px;
+    padding: 0px;
     margin: 0 0 15px 0;
     display: flex;
+    border: 1px solid #00000020;
+    overflow: hidden;
+}
+
+.recipe_step_numb {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--olive);
+    color: var(--white);
+    padding: 7px 15px;
+    font-weight: 700;
 }
 
 .recipe_step_photo {
@@ -14,6 +27,7 @@
     height: 230px;
     max-height: 230px;
     background-color: var(--olive);
+    position: relative;
 }
 
 .recipe_step_text {

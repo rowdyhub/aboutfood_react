@@ -1,6 +1,7 @@
 import styles from './RecipeHeader.module.css'
 import FavoriteButton from "../../../UI/FavoritesButton/FavoritesButton";
 import RecipeInfo from "./RecipeInfo";
+import stylesRI from './RecipeInfo.module.css';
 
 let RecipeHeader = (props) => {
     return (
@@ -21,10 +22,27 @@ let RecipeHeader = (props) => {
                 </div>
                 <div className={ styles.recipe_header_types }>{ props.cuisine } - { props.category }</div>
                 <div className={ styles.recipe_header_name }>{ props.name }</div>
-                <RecipeInfo persones={props.persones} time={props.time} likes={props.likes}/>
+                <div className={ styles.recipe_informations}>
+                    <div className={ styles.recipe_informations_buttons}>
+                        <span className={ stylesRI.persones }></span>
+                        { props.persones } порций
+                    </div>
+                    <div className={ styles.recipe_informations_buttons}>
+                        <span className={ stylesRI.time }></span>
+                        { props.time } минут
+                    </div>
+                    <div className={ styles.recipe_informations_buttons}>
+                        <span className={ stylesRI.likes }></span>
+                        { props.likes } отметок
+                    </div>
+                </div>
+                {/* <RecipeInfo persones={props.persones} time={props.time} likes={props.likes}/> */}
             </div>
         </div>
     );
 }
 
 export default RecipeHeader;
+
+
+

@@ -14,7 +14,9 @@ let Header = (props) => {
                     setSearchInput={props.setSearchInput}/>
                 <UserBar 
                     state={props.state} 
-                    modal={props.modal}/>
+                    modal={props.modal}
+                    user={props.user}
+                    setUser={props.setUser}/>
             </div>
         </div>
     );

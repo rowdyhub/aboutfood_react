@@ -1,15 +1,4 @@
 let state = {
-    user:{
-        userAuth: false,
-        curentUser: 87421,
-        userInfo: {
-            userID: 87421,
-            userName: 'ADMIN',
-            userPic: './images/userPics/Bcmp3qvswRr9ojjou7VNjk9E9SOInZ25GUyKabeIcvNpRDsuAAZ0Q2bEZEtXJkdaAQvY7NEm.jpg',
-            userToken: '4f2gh3f4h2g3f4h2g3f4h2g3'
-        }
-    },
-
     recipeResolve: {
         id: 1,
         userId: 763,
@@ -189,9 +178,310 @@ let state = {
             likes: 9,
             mainImageUrl: '../images/b79c442b.jpg',
             description: 'Ну шо скозать, не знаю даже. Куцна.'
+        },
+        {
+            id: 4,
+            userId: 704,
+            userAvatar: '',
+            userName: 'Serg',
+            liked: true,
+            name: 'Куриные отбивные',
+            cuisine: 'Французская кухня',
+            category: 'Второе блюдо',
+            persones: 4,
+            time: 40,    /* only minutes */
+            likes: 99,
+            mainImageUrl: '../images/b79c442b.jpg',
+            description: 'Пальчики оближешь.'
         }
     ],
 
+    listRecipes: [
+        {
+            id: 1,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: true,
+            name: 'Сырный суп по-французски с курицей (место для второй строки при длинном названии)',
+            cuisine: 'Французская кухня',
+            category: 'Супы',
+            persones: 1,
+            time: 2,    /* only minutes */
+            likes: 3,
+            mainImageUrl: '../images/p_O.jpg',
+            description: 'Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящихсухариков никого не оставит равнодушным.',
+            ingridients: [
+                {
+                    ingridientID: 64,
+                    name: 'Вода',
+                    value: 1,
+                    unitID: 7,
+                    unit: 'л.'
+                },
+                {
+                    ingridientID: 52,
+                    name: 'Кортофель',
+                    value: 700,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 53,
+                    name: 'Лук',
+                    value: 100,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 33,
+                    name: 'Соль',
+                    value: 5,
+                    unitID: 7,
+                    unit: 'гр.'
+                }
+            ],
+            steps: [
+                {
+                    inID: 1,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 1'
+                },
+                {
+                    inID: 2,
+                    outID: 1,
+                    imageURL: '../images/b79c442b.jpg',
+                    text: 'Описание ШАГ 2'
+                },
+                {
+                    inID: 3,
+                    outID: 1,
+                    imageURL: '../images/1006224708.jpg',
+                    text: 'Описание ШАГ 3'
+                },
+                {
+                    inID: 4,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 4'
+                },
+            ]
+        }, 
+        {
+            id: 2,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: true,
+            name: 'Японский салат с рисом',
+            cuisine: 'Японская кухня',
+            category: 'Салаты',
+            persones: 1,
+            time: 2,    /* only minutes */
+            likes: 3,
+            mainImageUrl: '../images/rice.jpg',
+            description: 'Совмещая в себе простоту в приготовлении и пользу, этот салат станет прекрасным началом дня. Питательный рис с кисло сладкой заправкой поднимут Ваше настроение в начале дня и дадут достатчно энергии.',
+            ingridients: [
+                {
+                    ingridientID: 64,
+                    name: 'Вода',
+                    value: 1,
+                    unitID: 7,
+                    unit: 'л.'
+                },
+                {
+                    ingridientID: 52,
+                    name: 'Кортофель',
+                    value: 700,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 53,
+                    name: 'Лук',
+                    value: 100,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 33,
+                    name: 'Соль',
+                    value: 5,
+                    unitID: 7,
+                    unit: 'гр.'
+                }
+            ],
+            steps: [
+                {
+                    inID: 1,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 1'
+                },
+                {
+                    inID: 2,
+                    outID: 1,
+                    imageURL: '../images/b79c442b.jpg',
+                    text: 'Описание ШАГ 2'
+                },
+                {
+                    inID: 3,
+                    outID: 1,
+                    imageURL: '../images/1006224708.jpg',
+                    text: 'Описание ШАГ 3'
+                },
+                {
+                    inID: 4,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 4'
+                },
+            ]
+        },
+        {
+            id: 3,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: true,
+            name: 'Сырный суп по-французски с курицей (место для второй строки при длинном названии)',
+            cuisine: 'Французская кухня',
+            category: 'Супы',
+            persones: 1,
+            time: 2,    /* only minutes */
+            likes: 3,
+            mainImageUrl: '../images/p_O.jpg',
+            description: 'Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящихсухариков никого не оставит равнодушным.',
+            ingridients: [
+                {
+                    ingridientID: 64,
+                    name: 'Вода',
+                    value: 1,
+                    unitID: 7,
+                    unit: 'л.'
+                },
+                {
+                    ingridientID: 52,
+                    name: 'Кортофель',
+                    value: 700,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 53,
+                    name: 'Лук',
+                    value: 100,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 33,
+                    name: 'Соль',
+                    value: 5,
+                    unitID: 7,
+                    unit: 'гр.'
+                }
+            ],
+            steps: [
+                {
+                    inID: 1,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 1'
+                },
+                {
+                    inID: 2,
+                    outID: 1,
+                    imageURL: '../images/b79c442b.jpg',
+                    text: 'Описание ШАГ 2'
+                },
+                {
+                    inID: 3,
+                    outID: 1,
+                    imageURL: '../images/1006224708.jpg',
+                    text: 'Описание ШАГ 3'
+                },
+                {
+                    inID: 4,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 4'
+                },
+            ]
+        }, 
+        {
+            id: 4,
+            userId: 763,
+            userAvatar: '',
+            userName: 'Dari',
+            liked: true,
+            name: 'Сырный суп по-французски с курицей (место для второй строки при длинном названии)',
+            cuisine: 'Французская кухня',
+            category: 'Супы',
+            persones: 1,
+            time: 2,    /* only minutes */
+            likes: 3,
+            mainImageUrl: '../images/p_O.jpg',
+            description: 'Нежный суп с приятным сливочным вкусом перенесет Вас прямиком на улицы Парижа. Превосходное сочетание сырного супа и хрустящихсухариков никого не оставит равнодушным.',
+            ingridients: [
+                {
+                    ingridientID: 64,
+                    name: 'Вода',
+                    value: 1,
+                    unitID: 7,
+                    unit: 'л.'
+                },
+                {
+                    ingridientID: 52,
+                    name: 'Кортофель',
+                    value: 700,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 53,
+                    name: 'Лук',
+                    value: 100,
+                    unitID: 2,
+                    unit: 'гр.'
+                },
+                {
+                    ingridientID: 33,
+                    name: 'Соль',
+                    value: 5,
+                    unitID: 7,
+                    unit: 'гр.'
+                }
+            ],
+            steps: [
+                {
+                    inID: 1,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 1'
+                },
+                {
+                    inID: 2,
+                    outID: 1,
+                    imageURL: '../images/b79c442b.jpg',
+                    text: 'Описание ШАГ 2'
+                },
+                {
+                    inID: 3,
+                    outID: 1,
+                    imageURL: '../images/1006224708.jpg',
+                    text: 'Описание ШАГ 3'
+                },
+                {
+                    inID: 4,
+                    outID: 1,
+                    imageURL: '../images/p_O.jpg',
+                    text: 'Описание ШАГ 4'
+                },
+            ]
+        },
+    ]
 
 }
 

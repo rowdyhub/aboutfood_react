@@ -12,7 +12,7 @@ const Modal = ({visible, setVisible, content, ...props}) => {
 
     let inModal;
     if (content === 'login') {
-        inModal = <Login loginInputs={props.loginInputs} setLoginInputs={props.setLoginInputs}/>
+        inModal = <Login loginInputs={props.loginInputs} setLoginInputs={props.setLoginInputs} doLogin={props.doLogin}/>
     } else if(content === 'signup') {
         inModal = <Signup signupInputs={props.signupInputs} setSignupInputs={props.setSignupInputs}/>
     }
