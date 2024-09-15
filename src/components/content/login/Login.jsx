@@ -22,7 +22,7 @@ let Login = (props) => {
                         value={props.loginInputs.password} 
                         onChange={(e) => { props.setLoginInputs({...props.loginInputs, password: e.target.value}) }}/>
                 </div>
-                <div onClick={()=>{props.doLogin()}}>
+                <div onClick={()=>{props.doLogin(); document.body.style.overflowY = 'scroll';}}> {/* FIXME */}
                     <Button name='Войти'/>
                 </div>
             </div>

@@ -11,18 +11,18 @@ const Modal = ({visible, setVisible, content, ...props}) => {
         document.body.style.overflowY = 'hidden';
     }
 
-    let inModal;
+    let modalWindowContent;
     if (content === 'login') {
-        inModal = <Login loginInputs={props.loginInputs} setLoginInputs={props.setLoginInputs} doLogin={props.doLogin}/>
+        modalWindowContent = <Login loginInputs={props.loginInputs} setLoginInputs={props.setLoginInputs} doLogin={props.doLogin}/>
     } else if(content === 'signup') {
-        inModal = <Signup signupInputs={props.signupInputs} setSignupInputs={props.setSignupInputs}/>
+        modalWindowContent = <Signup signupInputs={props.signupInputs} setSignupInputs={props.setSignupInputs}/>
     }
 
 
     return (
-        <div className={rootClasses.join(" ")} onClick={() => {setVisible(false); document.body.style.overflowY = 'scroll';}}>
+        <div className={rootClasses.join(" ")} onClick={() => {setVisible(false); document.body.style.overflowY = 'scroll';}}> {/* FIXME */}
             <div className={styles.modalContent} onClick={(e) => {e.stopPropagation()}}>
-                {inModal}                
+                {modalWindowContent}
             </div>
         </div>
     )
